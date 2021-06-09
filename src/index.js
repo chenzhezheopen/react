@@ -1,15 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import { hot } from 'react-hot-loader/root'
+import Routes from './configs/router.config.js'
+// import { directive } from '@babel/types';
+//Header
+import Header from './components/Header'
+
+// const HotRoutes = hot(Routes)
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    <Header />
+    <Routes />
+  </div>,
   document.getElementById('root')
 );
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
